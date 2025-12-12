@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <title>DOM For Javascript.</title>
+    <style>
+        .bg-black{
+            background-color: #1d1212;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body class="bg-black" style="background-color: dimgrey; color:skyblue;">
+    <div class="bg-black">
+<h1 class="heading">DOM Learning:</h1>
+<p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Brendan_Eich">Brendan Eich Founder of Javascript.</a>
+    <br>
+<div>
+    Diagram: <br>
+   "Element" inside ==> Window=>Document=>Html=>1.Head{1.Title => [Text Node],2.Meta=>[Attribute]},2.Body{1.div==>1.Attribute{2.h1[Attribute,Text Node],3.paragrap[Text Node]},2.Attribute}
+</div>
+  
+<div>
+        <!-- <class></class> -->
+         <h1 id="title" class="heading">DOM Learning</h1>
+         <p>
+            Lorem ipsum dolor sit amet.
+         </p>
+         <h2>sldfjkghkjsd</h2>
+         <h2>gfjhslkds;f</h2>
+         <h2>gfkjmkkfhs</h2>
+    </div>
+    <input type="password">
+    <ul>
+        <li class="list-item">jdfk</li>
+        <li class="list-item">dfghkl</li>
+        <li class="list-item">fgx</li>
+        <li class="list-item">fgxxc</li>
+    </ul>
+
+    <!-- Create A New Element In DOM:  -->
+   <h1>Create A New Element In DOM:</h1>
+    <div class="parent">
+<div class="day">Monday</div>
+<div class="day">Tuesday</div>
+<div class="day">Wednesday</div>
+<div class="day">Thursday</div>
+    </div>
+
+
+ 
+     <!-- Edit and Remove Elements : -->
+<ul class="language">
+    <li>
+        Javascript
+    </li>
+  </ul>  
+
+         <!-- Events: -->
+          <h2> Amazing Image</h2> 
+          <div>
+             <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+          </div>
+
+
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert("owl clicked")
+    // }
+
+     // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, false)
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation()
+    // }, false)
+    
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+    // }, false)
+   
+    
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    
+        
+    })
+    
+    //removeIt.parentNode.removeChild(removeIt)
+</script>
+</body>
+</html>
