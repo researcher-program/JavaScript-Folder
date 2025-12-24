@@ -1,0 +1,71 @@
+/*
+                                Operation:
+*/
+/*
+let value=3
+let negValue =-value
+// console.log(negValue);
+*/
+/*
+            Normal Type Operation:
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**2);
+console.log(2**3); 
+        "**" ==> power
+console.log(2/2);
+console.log(2%2); //But it's important...
+*/
+/*
+let str1 ="Hello" 
+let str2 =" Arafat"
+let str3 = str1 + str2
+console.log(str3);
+*/
+/* 
+Complex Situation :
+
+console.log("1"+2);
+console.log(1+"2");
+console.log("1"+2+2);
+console.log(1+"2"+3);
+console.log(1+2+"3");
+console.log(2+3*4/5%6);
+ ==>((((2+3)*4)/5)%6)
+
+console.log(true);
+==>true
+console.log(+true);
+==>1
+console.log(true+);
+==>Error
+console.log(+ "");
+//==>"+"=1;=""=>0
+*/
+/* 
+Lame Type Code:
+
+let num1,num2,num3
+num1=num2=num3=2+2
+*/
+/*
+let gameCounter=100
+// ++gameCounter;
+gameCounter++;
+console.log(gameCounter);
+Output : same.
+
+>=>  ++gameCounter / gameCounter++ =>101{Output}
+*/
+/*
+If you want to learn more about in "Prefix-Postfix",get the search ==> Prefix-Postfix :
+
+link:
+1. ECMA:https://tc39.es/ecma262/2023/#sec-notational-conventions
+
+2.MDN:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
+
+3.W3school:https://www.w3schools.com/java/java_operators.asp
+*/
+         
