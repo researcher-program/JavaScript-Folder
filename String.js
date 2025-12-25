@@ -1,0 +1,73 @@
+ /*
+                  String:
+ */
+/*
+            Basic String:
+
+ const name = "arafat"
+ " Hello " + " World "
+ 'Hello World'
+*/
+/*
+const name = "arafat"
+const repoCount = 50
+console.log(name+repoCount+"value");
+
+         This are backdated...|
+
+      But Modern Days are:
+console.log(`Hello my name is  ${name} ,my repo is  ${repoCount} `);
+*/
+/*
+      Some String Functions:
+const gameName = new String("valueghflg-hhj")
+console.log(gameName[0]);
+console.log(gameName.__proto__); //double underscore { _ _ }
+console.log(gameName.length);
+console.log(gameName.toUpperCase());
+console.log(gameName.charAt(2));
+console.log(gameName.indexOf('u'));
+console.log(gameName.indexOf("a"));
+const newString = gameName.substring(0,6)
+console.log(newString);
+const anotherString = gameName.slice(-8,6)
+console.log(anotherString);
+const newStringone = "      arafat     "
+console.log(newStringone);console.log(newStringone.trim());
+// Know more about trim then :https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim
+
+const url = "https://arafat.com/arafata%20yeash"
+ console.log(url.replace("%20","-"));
+
+console.log(url.includes("yeash"));
+
+console.log(url.includes('hitesh'));
+
+const gameName1 = new String("valueghflg-hhj-ghfj")
+console.log(gameName1.split("-"));
+Please spending on string functions to read how to work on it ,so every string function has atleast few minutes to study on it below:~
+Know more about trim then :
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+*/
+/*
+If you want to learn about  "string" :
+"If you want to know about this string function{f},then go to click :
+-->newTab-->inspect-->console-->[[Prototype]]: String."
+length: 5
+[[Prototype]]: 
+String anchor: ƒ anchor()
+at: ƒ at()
+big: ƒ big()
+blink: ƒ blink()
+bold: ƒ bold()
+charAt: ƒ charAt()
+charCodeAt: ƒ charCodeAt()
+
+...... {... More ...}
+
+Symbol(Symbol.iterator): ƒ [Symbol.iterator]()[[Prototype]]: Object[[PrimitiveValue]]: ""[[PrimitiveValue]]: "value"
+*/
+/*
++++++++++++++++++++++++++++++++++++ X +++++++++++++++++++++++++++++++++++++++++
+*/
