@@ -1,0 +1,236 @@
+
+ /*
+                     Numbers And Math:
+
+
+      All About Numbers:
+
+const score = 400
+console.log(score);
+
+const balance = new Number(100)
+console.log(balance);
+>balance
+Number {100}
+[[Prototype]] : Number
+~ Some Number's Functions: ~
+
+1.constructor:number()
+2.toExponential:toExponential()
+3.toFixed:toFixed()
+4.toLocaleString:toLocaleString()
+5.toPrecision:toPrecision()
+6.toString:toString()
+7.valueOf:valueOf()
+
+[[Prototype]]: Object
+[[PrimitiveValue]]: 0
+[[PrimitiveValue]]: 100
+
+console.log(balance.toString().length);
+console.log(balance.toFixed(2)); //100.00
+console.log(balance.toFixed(1)); //100.0
+console.log(balance.toFixed(3)); //100.000
+
+const otherValue = 23.8965
+console.log(otherValue.toPrecision(3)); // 23.9
+
+const otherValue1 = 123.8965
+console.log(otherValue1.toPrecision(3)); //124
+
+const otherValue2 = 1123.8965
+console.log(otherValue2.toPrecision(3)); //1.12e+3
+
+const otherValue3 = 123.8965
+console.log(otherValue3.toPrecision(4)); // 123.9
+
+const otherNumbers = 100000000000000000000
+console.log(otherNumbers.toLocaleString('en-BD','en-IN'));
+
+*/
+/*
+
+If you want to learn about  "Number" :
+"If you want to know about this Number function{f},then go to click :
+-->newTab-->inspect-->console-->[[Prototype]]: Number."
+
+Number :
+ƒ Number() { [native code] }
+>Number.  
+
+~ Number With Properties : ~
+
+1)Number.EPSILON
+2)Number.isFinite
+3)Number.isInteger
+4)Number.isNaN
+5)Number.isSafeInteger
+6)Number.length
+7)Number.MAX_SAFE_INTEGER
+8)Number.MAX_VALUE
+9)Number.MIN_SAFE_INTEGER
+10)Number.MIN_VALUE
+11)Number.name
+12)Number.NaN
+13)Number.NEGATIVE_INFINITY
+14)Number.parseFloat
+15)Number.parseInt
+16)Number.POSITIVE_INFINITY
+17)Number.prototype
+18)Number.apply
+19)Number.bind
+20)Number.call
+21)Number.caller
+22)Number.constructor
+23)Number.hasOwnProperty
+24)Number.isPrototypeOf
+25)Number.propertyIsEnumerable
+26)Number.toLocaleString
+27)Number.toString
+28)Number.valueOf
+29)Number.__defineGetter__
+30)Number.__defineSetter__
+31)Number.__lookupGetter__
+32)Number.__lookupSetter__
+33)Number.__proto__
+
+//Number.এর পরে যেকোনো ফাংশন বসানো যাবে Suggestion-List অনুযায়ী,
+ Like:Number.EPSILON
+            +++++++++++++++++++++++ X +++++++++++++++++++++++++
+ */
+/*
+      All About Maths:
+console.log(Math);
+console.log(Math.abs(-4)); //4 {positive 4} and {positive 4/+4 ==> 4.}
+console.log(Math.round(-4.35)); // 4
+console.log(Math.round(-4.6)); // 5 / -5
+console.log(Math.ceil(4.32)); //5
+console.log(Math.floor(4.9)); //4
+console.log(Math.max(4,5,8,9,12,18)); //18
+console.log(Math.min(4,5,8,9,12,18));//4
+console.log(Math.random());
+console.log((Math.random()*10)+1);
+console.log(Math.floor(Math.random()*10)+1);
+
+const min=10
+const max=20
+console.log(Math.floor(Math.random()*(max-min+1))+min);
+*/
+
+/*
+If you want to learn about  "Math" :
+"If you want to know about this Math function{f},then go to click :
+-->newTab-->inspect-->console-->[[Prototype]]: Math."
+
+console.log(Math); ==> VM365:1 
+
+Math {abs: ƒ, acos: ƒ, acosh: ƒ, asin: ƒ, asinh: ƒ, …}
+1)E: 2.718281828459045
+2)LN2: 0.6931471805599453
+3)LN10: 2.302585092994046
+4)LOG2E: 1.4426950408889634
+5)LOG10E: 0.4342944819032518
+6)PI: 3.141592653589793
+7)SQRT1_2: 0.7071067811865476
+8)SQRT2: 1.4142135623730951
+
+i)abs:  abs()
+ii)acos:  acos()
+iii)acosh:  acosh()
+iv)asin:  asin()
+v)asinh:  asinh()
+vi)atan:  atan()
+vii)atan2:  atan2()
+viii)atanh:  atanh()
+xi)cbrt:  cbrt()
+x)ceil:  ceil()
+ix)clz32:  clz32()
+iix)cos:  cos()
+iiix)cosh:  cosh()
+ivx)exp:  exp()
+vx)expm1:  expm1()
+vix)f16round:  f16round()
+viix)floor:  floor()
+viiix)fround:  fround()
+xix)hypot:  hypot()
+xx)imul:  imul()
+ixx)log:  log()
+iixx)log1p:  log1p()
+iiixx)log2:  log2()
+ivxx)log10:  log10()
+vxx)max:  max()
+vixx)min:  min()
+viixx)pow:  pow()
+viiixx)random:  random()
+xixx)round:  round()
+xxx)sign:  sign()
+ixxx)sin:  sin()
+iixxx)sinh:  sinh()
+iiixxx)sqrt:  sqrt()
+ivxxx)tan:  tan()
+vxxx)tanh:  tanh()
+vixxx)trunc:  trunc()
+  Symbol(Symbol.toStringTag): "Math"
+[[Prototype]]: Object
+             ++++++++++++++++++++ X ++++++++++++++++++++++++
+*/
+
+const score = 400
+// console.log(score);
+
+const balance = new Number(100)
+// console.log(balance); // [Number: 100]
+
+// console.log(balance.toString()); //100
+// console.log(balance.toString().length); //3
+// console.log(typeof balance); //object
+
+// console.log(balance.toFixed(2)); //100.00
+// console.log(balance.toFixed(1)); //100.0
+// console.log(balance.toFixed(3)); //100.000
+
+
+const otherValue = 23.8965
+// console.log(otherValue.toPrecision(3)); // 23.9
+
+const otherValue1 = 123.8965
+// console.log(otherValue1.toPrecision(3)); //124
+
+const otherValue2 = 1123.8965
+// console.log(otherValue2.toPrecision(3)); //1.12e+3
+
+const otherValue3 = 123.8965
+// console.log(otherValue3.toPrecision(4)); // 123.9
+
+const otherNumbers = 100000000000000000000
+// console.log(otherNumbers.toLocaleString());
+// console.log(otherNumbers.toLocaleString('en-BD'));
+// console.log(otherNumbers.toLocaleString('en-IN'));
+// console.log(otherNumbers.toLocaleString('en-BD','en-IN'));
+
+/*
+            ----------------- X ------------
+*/
+
+// console.log(Math); // Object [Math] {}
+// console.log(Math.abs(-4)); //4 {positive 4} and {positive 4/+4 ==> 4.}
+// console.log(Math.round(-4.35)); // 4
+// console.log(Math.round(-4.6)); // 5 / -5
+// console.log(Math.ceil(4.32)); //5
+// console.log(Math.floor(4.9)); //4
+// console.log(Math.max(4,5,8,9,12,18)); //18
+// console.log(Math.min(4,5,8,9,12,18));//4
+console.log(Math.random());
+// console.log(Math.random()*10);
+// console.log((Math.random()*100));
+// console.log((Math.random()*10));
+// console.log(Math.random()*10 +1);
+// console.log((Math.random()*10)+1);
+
+// console.log(Math.floor(Math.random()*10)+1);
+// console.log(Math.ceil(Math.random()*10)+1);
+
+const min=10
+const max=20
+// console.log(Math.floor(Math.random()*(max-min+1))+ min);
+// console.log(Math.floor(Math.random()*(max-min+1))+ max);
