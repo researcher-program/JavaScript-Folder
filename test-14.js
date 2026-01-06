@@ -1,0 +1,75 @@
+ function one() {
+        const username = "Arafat"
+        function two() {
+            const website = "Youtube"
+            console.log(username);
+        }
+        // console.log(website); // This is Getting "Error",because This "console.log(website)" inside the "function two(){}".
+        two(); // But if I comment Out Of "two()" function then not execute of "console.log(username)".
+    }
+    // one();
+
+    if (true) {
+        const username = "Arafat"
+        if (username==="Arafat") {
+            const website = " youtube"
+            // console.log(username+website);
+            
+            
+        }
+        // console.log(website); // This is Getting "Error",because This "console.log(website)" inside the "second scope{}".
+    }
+    // console.log(username); // This is Getting "Error",because This "console.log(username)" inside the "first scope{}".
+
+
+    function addOne(num) {
+        // console.log(num);
+
+        // console.log(addOne); // [Function: addOne] (Not Unexpected!!!)
+
+        return num + 1
+
+        // console.log(num);
+        // console.log(addOne);
+        // [return এর পরে কোনো কিছুই print / console.log হয় না ]
+    }
+    // console.log(num); //ReferenceError: num is not defined (As I Expected!!!) 
+    // console.log(addOne); // [Function: addOne] (Not Unexpected!!!)
+
+    // addOne(5)
+    // addOne(5)
+
+    const addTwo = function (num) {
+        // console.log(addTwo(7)); // RangeError: Maximum call stack size exceeded
+        // console.log(addTwo);
+        // console.log(num); // "undefined" For   'console.log(addTwo());'
+
+        return num + 2
+        // console.log(addTwo);
+        // console.log(num);
+    }
+    // console.log(addTwo);
+        // console.log(num);
+        // console.log(addTwo()); //NaN  // এটার জন্যে Undefined , NaN,7 আসে...!  
+        // console.log(addTwo(8));
+    // addTwo(7)
+
+
+
+    addThree(5)
+    // console.log(addThree(5));
+function addThree(num) {
+        return num + 1
+    }
+    // addThree(5)
+    // [ এখানে " Error " না আসার কারন হল ' Access:addFour(5) ' আগে  করা হয় নাই  " Declaration: const addFour = " এর পূর্বে ! ]
+
+
+/*
+    // addFour(5) // Now given to the error... Because This Problem seems to "Hoisting" // ReferenceError: Cannot access 'addFour' before initialization
+    const addFour = function(num) {
+        return num + 2
+    }
+
+    // [ এখানে " Error " আসার কারন হল ' Access:addFour(5) ' আগেই করা হয়েছে " Declaration: const addFour = " এর পূর্বে ! ]
+*/
